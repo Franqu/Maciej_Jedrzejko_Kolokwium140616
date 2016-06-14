@@ -12,20 +12,20 @@ namespace Maciej_Jedrzejko_Kolokwium140616
         {
             double valueOfCars = 0;
             int N = 50;
-            for(int i=0;i<N;i++)
+            for(int i=0;i<N;i++) //First get into the array and select a car
             {
-                for (int j=0;j<N;j++)
+                for (int j=0;j<N;j++) //Checking if car from previous for loop passes with other cars
                 {
-                    if (a[i] < a[j])
+                    if (a[i] < a[j]) //if it does so increase valueOfCars by 1
                         valueOfCars++;
                 }
                  
             }
 
-            if (valueOfCars > 1000000000) valueOfCars = -1; // tooManyPasses: if theres more then 1 000 000 000 valueOfCars = -1
+            if (valueOfCars > 1000000000) valueOfCars = -1; // tooManyPasses: if theres more then  1 000 000 000 passes  valueOfCars returns -1
             return valueOfCars;
         }
-        //Todo method Cars(int[] a) resolving problem given on paper.
+        
    
          
 
