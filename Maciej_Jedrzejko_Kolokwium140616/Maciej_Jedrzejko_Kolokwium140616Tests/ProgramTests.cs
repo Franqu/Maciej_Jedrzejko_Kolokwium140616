@@ -14,13 +14,13 @@ namespace Maciej_Jedrzejko_Kolokwium140616.Tests
         [TestMethod()]
         public void MainTest()
         {
-            //Todo test unit checking if car passed beyond 1 000 000 000 return -1
+            
             int[] aTooMuch = { 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0 };
             Assert.AreEqual(Program.Cars(aTooMuch), -1);
-            //Todo test unit checking if car passed counting  method works properly
+            //Solved, called method will return value = -1 for given table if it excels value 1 000 000 000
             int[] a1 = { 0, 1, 0, 1, 1 };
             Assert.AreEqual(Program.Cars(a1), 5);
-
+            //Solved, called method will check if for given table it returns known value.
 
             
         }
