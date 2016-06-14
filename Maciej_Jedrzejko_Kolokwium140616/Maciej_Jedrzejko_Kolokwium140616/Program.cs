@@ -17,6 +17,7 @@ namespace Maciej_Jedrzejko_Kolokwium140616
                 if (a[i] < a[i + 1])
                    valueOfCars ++; 
             }
+            //Todo checking whole array, not only next car in it
             
             return valueOfCars;
         }
