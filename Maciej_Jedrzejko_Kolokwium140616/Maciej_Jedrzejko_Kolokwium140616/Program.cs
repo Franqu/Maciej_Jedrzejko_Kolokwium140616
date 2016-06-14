@@ -8,9 +8,9 @@ namespace Maciej_Jedrzejko_Kolokwium140616
 {
     public class Program
     {
-        public static int Cars(int[] a)
+        public static double Cars(int[] a)
         {
-            int valueOfCars = 0;
+            double valueOfCars = 0;
             int N = 50;
             for(int i=0;i<N;i++)
             {
@@ -21,12 +21,12 @@ namespace Maciej_Jedrzejko_Kolokwium140616
                 }
                  
             }
-            //Todo checking whole array, not only next car in it
-            
+
+            if (valueOfCars > 1000000000) valueOfCars = -1; // tooManyPasses: if theres more then 1 000 000 000 valueOfCars = -1
             return valueOfCars;
         }
         //Todo method Cars(int[] a) resolving problem given on paper.
-        //Todo if theres more then 1 000 000 000 valueOfCars = -1
+   
          
 
         public static void Main(string[] args)
