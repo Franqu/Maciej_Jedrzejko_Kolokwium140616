@@ -14,6 +14,8 @@ namespace Maciej_Jedrzejko_Kolokwium140616.Tests
         [TestMethod()]
         public void MainTest()
         {
+            //Todo test unit checking if car passed beyond 1 000 000 000 return -1
+            //Todo test unit checking if car passed counting  method works properly
             Assert.Fail();
         }
     }
