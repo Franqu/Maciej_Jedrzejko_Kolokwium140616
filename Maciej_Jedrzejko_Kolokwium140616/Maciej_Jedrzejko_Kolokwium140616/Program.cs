@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Maciej_Jedrzejko_Kolokwium140616
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
         }
     }
