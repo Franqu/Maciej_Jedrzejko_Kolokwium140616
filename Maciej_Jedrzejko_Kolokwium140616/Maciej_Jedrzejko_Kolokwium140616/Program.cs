@@ -8,15 +8,15 @@ namespace Maciej_Jedrzejko_Kolokwium140616
 {
     public class Program
     {
-        public static double Cars(int[] a)
+        public static double Cars(int[] carsTable)
         {
             double valueOfCars = 0;
-            int N = 50;
-            for(int i=0;i<N;i++) //First get into the array and select a car
+            int amountOfCars = 50;
+            for(int i=0;i< amountOfCars; i++) //First get into the array and select a car
             {
-                for (int j=0;j<N;j++) //Checking if car from previous for loop passes with other cars
+                for (int j=0;j< amountOfCars; j++) //Checking if car from previous for loop passes  other cars
                 {
-                    if (a[i] < a[j]) //if it does so increase valueOfCars by 1
+                    if (carsTable[i] < carsTable[j]) //if it does so increase valueOfCars by 1
                         valueOfCars++;
                 }
                  
