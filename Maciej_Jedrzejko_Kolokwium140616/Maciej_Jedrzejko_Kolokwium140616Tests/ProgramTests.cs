@@ -15,13 +15,14 @@ namespace Maciej_Jedrzejko_Kolokwium140616.Tests
         public void MainTest()
         {
             //Todo test unit checking if car passed beyond 1 000 000 000 return -1
-
+            int[] aTooMuch = { 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0 };
+            Assert.AreEqual(Program.Cars(aTooMuch), -1);
             //Todo test unit checking if car passed counting  method works properly
             int[] a1 = { 0, 1, 0, 1, 1 };
             Assert.AreEqual(Program.Cars(a1), 5);
 
 
-            Assert.Fail();
+            
         }
     }
 }
