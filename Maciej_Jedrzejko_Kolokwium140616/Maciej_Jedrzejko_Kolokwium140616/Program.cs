@@ -11,6 +11,13 @@ namespace Maciej_Jedrzejko_Kolokwium140616
         public static int Cars(int[] a)
         {
             int valueOfCars = 0;
+            int N = 50;
+            for(int i=0;i<50;i++)
+            {
+                if (a[i] < a[i + 1])
+                   valueOfCars ++; 
+            }
+            
             return valueOfCars;
         }
         //Todo method Cars(int[] a) resolving problem given on paper.
