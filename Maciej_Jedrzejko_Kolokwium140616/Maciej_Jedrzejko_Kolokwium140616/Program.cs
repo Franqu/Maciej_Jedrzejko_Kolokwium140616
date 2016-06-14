@@ -8,6 +8,7 @@ namespace Maciej_Jedrzejko_Kolokwium140616
 {
     public class Program
     {
+        //Todo method Cars(int[] a) resolving problem given on paper.
         public static void Main(string[] args)
         {
         }
